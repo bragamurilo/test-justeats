@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section{
+    min-height: calc(100% - 56px);
+}
+
+#navbar{
+    background: #ff8000;
+}
+
+#navbar .navbar-brand{
+    color:#fff !important;
+}
+
+#basket{
+    min-height: 100%;
+}
+
+.form-control-qtd{
+    max-width: 60px;
+}
+
+.description-product{
+    font-size: 0.9em;
+}
+
+.price-product{
+    font-weight: bold;
+}
+
+
+.empty-basket p{
+    font-weight: bold;
+}
+
+.empty-basket img{
+    max-width: 300px;
+}
+
+.list-group-item:nth-child(2n+1){
+    background-color:#fffdfd !important;
+}

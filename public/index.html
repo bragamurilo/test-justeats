@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustEat's</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./">JustEat's</a>
+        </div>
+    </nav>
+
+    <section class="p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row" id="product-list"></div>
+                </div>
+                <div class="col-4">
+                    <div id="basket" class="card">
+                        <h5 class="card-header">Your basket</h5>
+                        <div class="card-body empty-basket text-center">
+                            <p>Your basket is empty!</p>
+                        </div>
+                        <ul class="basket-list list-group list-group-flush"></ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal add items-->
+    <div class="modal fade" id="modalAddProduct" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="description-product">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet facilisis odio, in
+                        fermentum urna dictum sed.
+                    </p>
+
+                    <p class="price-product"></p>
+                </div>
+                <div class="modal-footer">
+                    <form class="form-inline" id="form-add-product">
+                        <input type="number" name="qty" class="form-control form-control-qtd mr-2" id="qtd" min="1"
+                            max="999" value="1" required />
+                        <input type="hidden" value="" name="id_product">
+                        <button type="submit" class="btn btn-primary" id='btn-total'>Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal checkout-->
+    <div class="modal fade" id="modalCheckout" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Completed order</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Total order: <span class="total-order">0</span></p>
+                    <p>You saved: <span class="total-saved">0</span></p>
+                    <p>total payable: <span class="total-payable">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id='btn-new-order'>New Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
