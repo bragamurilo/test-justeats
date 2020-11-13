@@ -1,7 +1,7 @@
 # Test Just Eat's
 
 ### Rodando a aplicação
-Para rodar a aplicação para rodar o comando no terminal: 'npm start'
+Para rodar a aplicação para rodar o comando no terminal: ```npm start```
 
 Lembrando que a API também deverá estar rodando.
 
