@@ -1,5 +1,9 @@
 # Test Just Eat's
 
+### Rodando a aplicação
+Para rodar a aplicação para rodar o comando no terminal: 'npm start'
+Lembrando que a API também deverá estar rodando.
+
 ### Premissas
 Durante o desenvolvimento tive algumas dúvidas, por exemplo, as promoções eram acumulativas? Acabei deixando todas acumulativas.
 
